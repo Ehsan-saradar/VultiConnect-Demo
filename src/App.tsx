@@ -115,7 +115,7 @@ function App() {
         data: memo,
         from: state.address,
         to: receiver,
-        value: amount.toString(16),
+        value: `0x${amount.toString(16)}`,
       };
 
       const selectedChain = allSupportedChains.find(
